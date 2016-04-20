@@ -14,7 +14,7 @@ public class Task {
     ArrayList<String> componentTypesNeeded;
     //ArrayList<Component> componentsAssigned;
 
-    ArrayList<Lock> locksHeld;
+    ArrayList<LockSchedule> locksHeld;
 
     public Task(String json) {
         //TODO: Add JSON parser here.

@@ -24,13 +24,11 @@ public class Scheduler {
 
     //Here we need to pair a LabComponent with a Schedule
 
-    private Scheduler()
-    {
-
+    private Scheduler() {
+        currentTime = System.currentTimeMillis() / 1000L;
     }
 
-    public static void scheduleTask(Task task)
-    {
+    public static void scheduleTask(Task task) {
 
     }
 }

@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by markd on 4/12/2016.
  */
 
-public class Lock{
+public class LockSchedule{
     private String lockName = "";
     private boolean locked = false;
     private Task currentTask = null;
@@ -14,7 +14,7 @@ public class Lock{
     private ArrayList<Task> taskSchedule = new ArrayList<Task>();
 
 
-    public Lock() {
+    public LockSchedule() {
 
     }
 
