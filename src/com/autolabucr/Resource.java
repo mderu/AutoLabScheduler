@@ -3,7 +3,10 @@ package com.autolabucr;
 /**
  * Created by markd on 4/19/2016.
  */
-public class Resource {
+
+import java.io.Serializable;
+
+public class Resource implements Serializable {
     String name = "";
 
     /**

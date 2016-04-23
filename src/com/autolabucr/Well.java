@@ -1,13 +1,14 @@
 package com.autolabucr;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by markd on 4/19/2016.
  */
-public class Well extends LabComponent{
+public class Well extends LabComponent implements Serializable{
 
-    public static ArrayList<Well> allWells= new ArrayList<Well>();
+    public static ArrayList<Well> allWells= new ArrayList<>();
 
     Resource resource;
 
@@ -16,6 +17,4 @@ public class Well extends LabComponent{
         allWells.add(this);
         this.resource = resource;
     }
-
-
 }

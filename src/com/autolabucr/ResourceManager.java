@@ -1,5 +1,6 @@
 package com.autolabucr;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +12,14 @@ public class ResourceManager {
     private static Map<String, Integer> totalResources;
     private static Map<String, Integer> reservedResources;
 
-    private ResourceManager() {
+    /**
+     * Does as it says. Reads in the total amount of resources from the wells, and initializes the reservedResources
+     * to being empty.
+     */
+    public static void beginResourceTracking() {
+
+        if(reservedResources != null) {System.out.println("Resource Manager already has been initialized."); return;}
+
         totalResources = new HashMap<>();
 
         for(int i = 0; i < Well.allWells.size(); i++) {
@@ -24,10 +32,15 @@ public class ResourceManager {
             }
         }
 
-        reservedResources = new HashMap<String, Integer>(totalResources);
+        reservedResources = new HashMap<>();
     }
 
-    public static boolean ReserveResources(Map<String, Integer> requiredResources) {
+    /**
+     * Reserves an amount of resources if possible.
+     * @param requiredResources A map of resource names to resource amounts (in nanoliters)
+     * @return returns whether or not the resources were available to be reserved.
+     */
+    public static boolean reserveResources(Map<String, Integer> requiredResources) {
         
         ArrayList<String> keySet = new ArrayList<>();
         keySet.addAll(requiredResources.keySet());

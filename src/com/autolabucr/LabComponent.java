@@ -1,11 +1,12 @@
 package com.autolabucr;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by markd on 4/19/2016.
  */
-public class LabComponent {
+public class LabComponent implements Serializable {
 
     public static ArrayList<LabComponent> allComponents = new ArrayList<LabComponent>();
 

@@ -52,8 +52,8 @@ public class LockSchedule{
     }
 
     /**
-     * Returns whether or not the {@code Lock} is available throughout the given {@code range}.
-     * @param range The {@code range} to check if the {@code Lock} is completely free for.
+     * Returns whether or not the {@code LockSchedule} is available throughout the given {@code range}.
+     * @param range The {@code range} to check if the {@code LockSchedule} is completely free for.
      * @return Whether or not the lock was free.
      */
     public boolean isAvailableFrom(Range range){
@@ -68,7 +68,8 @@ public class LockSchedule{
         return true;
     }
 
-    public boolean reserveLock(Range range, Task task) {
+
+    public boolean reserveForTask(Range range, Task task) {
         for (int i = 1; i < lockSchedule.size(); i++) {
             if(lockSchedule.get(i-1).end <= range.start && range.end <= lockSchedule.get(i).start) {
                 lockSchedule.add(i, range);
