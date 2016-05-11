@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a5aa136-694c-4589-bd76-73968cb8957b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/autolabucr/Equipment/LabComponent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/autolabucr/Equipment/RobotArm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/autolabucr/Experiment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/autolabucr/Protocol/Protocol.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/autolabucr/Protocol/ProtocolBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/autolabucr/TimingConstraint.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/autolabucr/LabComponent.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/markd.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/markd.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AutoLabScheduler.iml" afterPath="$PROJECT_DIR$/AutoLabScheduler.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/autolabucr/LockSchedule.java" afterPath="$PROJECT_DIR$/src/com/autolabucr/LockSchedule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/autolabucr/Main.java" afterPath="$PROJECT_DIR$/src/com/autolabucr/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/autolabucr/Range.java" afterPath="$PROJECT_DIR$/src/com/autolabucr/Range.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/autolabucr/Resource.java" afterPath="$PROJECT_DIR$/src/com/autolabucr/Resource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/autolabucr/Scheduler.java" afterPath="$PROJECT_DIR$/src/com/autolabucr/Scheduler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/autolabucr/Task.java" afterPath="$PROJECT_DIR$/src/com/autolabucr/Task.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/autolabucr/Well.java" afterPath="$PROJECT_DIR$/src/com/autolabucr/Well.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/autolabucr/Protocol/ProtocolBuilder.java" afterPath="$PROJECT_DIR$/src/com/autolabucr/Protocol/ProtocolBuilder.java" />
     </list>
     <ignored path="AutoLabScheduler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,6 +15,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/AutoLabScheduler$Main.coverage" NAME="Main Coverage Results" MODIFIED="1462946362306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -112,12 +99,12 @@
       <file leaf-file-name="ProtocolBuilder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/autolabucr/Protocol/ProtocolBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="102" selection-start-line="33" selection-start-column="102" selection-end-line="33" selection-end-column="102" />
+            <state relative-caret-position="2215">
+              <caret line="228" column="50" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5836#5837#0" expanded="true" />
-                <element signature="e#5890#5891#0" expanded="true" />
+                <element signature="e#10876#10877#0" expanded="true" />
+                <element signature="e#10930#10931#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -587,7 +574,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1243" height="1047" extended-state="1" />
+    <frame x="-7" y="0" width="1243" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -599,6 +586,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33150986" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12337662" sideWeight="0.49573562" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1096,12 +1084,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/autolabucr/Protocol/ProtocolBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="102" selection-start-line="33" selection-start-column="102" selection-end-line="33" selection-end-column="102" />
+        <state relative-caret-position="2215">
+          <caret line="228" column="50" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5836#5837#0" expanded="true" />
-            <element signature="e#5890#5891#0" expanded="true" />
+            <element signature="e#10876#10877#0" expanded="true" />
+            <element signature="e#10930#10931#0" expanded="true" />
           </folding>
         </state>
       </provider>
