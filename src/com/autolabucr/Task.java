@@ -1,32 +1,43 @@
 package com.autolabucr;
 
-import java.util.ArrayList;
+import com.autolabucr.Equipment.LabComponent;
 
 /**
  * Created by markd on 4/12/2016.
  */
 
 public class Task {
-    private String name = "";
 
-    private Range timeRange;
+    public Range timeRange;
+    private Resource resourceUsed;
+    //Exact components used are determined by the scheduler.
+    private LabComponent componentUsed;
+    private Class componentType;
 
-    ArrayList<String> componentTypesNeeded;
-    //ArrayList<Component> componentsAssigned;
+    private String command = "";
 
-    ArrayList<LockSchedule> locksHeld;
-
-    public Task(String json) {
-        //TODO: Add JSON parser here.
+    public Task(Class tClass, String command, Range estTime) {
+        componentType = tClass;
+        this.command = command;
+        timeRange = estTime;
     }
 
-    public String toJSON() {
-        //TODO: Reverse JSON parser here.
-        return "";
+    public String getCommand(){return command;}
+
+    public LabComponent getComponentUsed(){
+        return componentUsed;
     }
 
-    public String toString() {
-        return name;
+    public Resource getResourceUsed(){
+        return resourceUsed;
+    }
+
+    public void setComponentUsed(LabComponent labComponent){
+        componentUsed = labComponent;
+    }
+
+    public Class getComponentType(){
+        return componentType;
     }
 
     //public ArrayList<ResourceID>

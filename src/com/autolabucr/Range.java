@@ -8,7 +8,7 @@ public class Range {
     public long duration;
     public long end;
 
-    public Range(long start, long end, long duration) {
+    private Range(long start, long end, long duration) {
         this.start = start;
         this.end = end;
         this.duration = duration;

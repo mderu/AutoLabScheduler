@@ -1,5 +1,7 @@
 package com.autolabucr;
 
+import com.autolabucr.Equipment.LabComponent;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -10,7 +12,7 @@ public class Well extends LabComponent implements Serializable{
 
     public static ArrayList<Well> allWells= new ArrayList<>();
 
-    Resource resource;
+    public Resource resource;
 
     public Well(String name, Resource resource) {
         super(name);

@@ -13,4 +13,9 @@ public class Resource implements Serializable {
      * In nanoliters
      */
     int amount = 0;
+
+    public Resource(String name, int amount){
+        this.name = name;
+        this.amount = amount;
+    }
 }

@@ -1,0 +1,75 @@
+[
+	{
+		"op": "pipette",
+		"groups": 
+		[
+			{
+				"transfer": 
+				[ 
+					{
+						"from": "wellA",
+						"to": "wellB",
+						"volume": "50uL",
+
+						// optionally:
+						"aspirate_speed": "10cm3/s",
+						"dispense_speed": "10cm3/s",
+						
+						"mix_after": 
+						{
+							"volume": "50uL",
+							"speed": "10cm3/s",
+							"repetitions": 5
+						},
+						"mix_before": 
+						{
+							"volume": "50uL",
+							"speed": "10cm3/s",
+							"repetitions": 5
+						}
+					}
+				]
+			},
+			{ 
+				"consolidate": 
+				{
+					"to": "wellA",
+					"from": 
+					[ 
+						{
+							"well": "wellB",
+							"volume": "50uL",
+
+							// optionally:
+							"aspirate_speed": "10cm3/s"
+						},
+						{
+							"well": "wellC",
+							"volume": "50uL",
+
+							// optionally:
+							"aspirate_speed": "10cm3/s"
+						},
+						{
+							"well": "wellD",
+							"volume": "50uL",
+
+							// optionally:
+							"aspirate_speed": "10cm3/s"
+						} 
+					],
+
+					// optionally:
+					"dispense_speed": flowrate,
+					"mix_after": 
+					{
+						"volume": "50uL",
+						"speed": "10cm3/s",
+						"repetitions": 7
+					}
+				}
+			}
+		]
+	}
+	
+]
