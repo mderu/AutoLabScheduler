@@ -61,5 +61,11 @@ public class Main {
         }catch (Exception e){
             e.printStackTrace();
         }
+
+        try {
+            Client.initialization();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

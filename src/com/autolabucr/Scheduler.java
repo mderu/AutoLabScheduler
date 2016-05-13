@@ -32,6 +32,10 @@ public class Scheduler {
 
     }
 
+    public static void storeExperiment(String Experiment, int jobId){
+
+    }
+
     /*public static boolean scheduleExperiment(Experiment exp){
 
     }*/
